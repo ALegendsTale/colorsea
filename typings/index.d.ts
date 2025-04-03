@@ -3,7 +3,7 @@ export type CommonColoraTuple = [number, number, number, number];
 export type CmykTuple = [number, number, number, number];
 
 export type ColorConfig = {
-    thowParseError?: boolean;
+    throwParseError?: boolean;
 };
 
 

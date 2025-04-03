@@ -53,7 +53,7 @@ describe('test colorsea', () => {
 
   it('test parse error', () => {
     try {
-      colorsea('XYa(36.45, 21.54, 20.97)', undefined, { thowParseError: true })
+      colorsea('XYa(36.45, 21.54, 20.97)', undefined, { throwParseError: true })
     } catch (error: any) {
       expect(error.message).toBe('Invalid Color')
     }

@@ -33,7 +33,7 @@ export class Color {
     config?: ColorConfig
   ) {
     const defaultConfig = {
-      thowParseError: globalConfig.thowParseError
+      throwParseError: globalConfig.throwParseError
     }
     const opt = Object.assign({}, defaultConfig, config ?? {})
     try {
@@ -41,7 +41,7 @@ export class Color {
       this._alpha = alpha
       this._rgb = rgbData
     } catch (error) {
-      if (opt.thowParseError) {
+      if (opt.throwParseError) {
         throw error
       }
     }

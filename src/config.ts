@@ -1,7 +1,7 @@
 export type ColorConfig = {
-  thowParseError?: boolean
+  throwParseError?: boolean
 }
 
 export const globalConfig: ColorConfig = {
-  thowParseError: false
+  throwParseError: false
 }
